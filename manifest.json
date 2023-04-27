@@ -1,0 +1,30 @@
+{
+	"name": "My ChatGPT Extension",
+	"version": "1.0",
+	"manifest_version": 3,
+	"background": {
+		"service_worker": "background.js"
+	},
+	"icons": {
+		"16": "icon16.png",
+		"32": "icon32.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"permissions": [
+		"notifications",
+		"activeTab",
+		"scripting",
+		"contextMenus",
+		"tabs",
+		"declarativeNetRequest"
+	],
+	"host_permissions": [
+		"https://zircon-twisty-can.glitch.me/*"
+	],
+	"action": {
+		"default_icon": "icon.png",
+		"default_title": "GPT Look Up"
+	}
+}
+

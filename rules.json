@@ -1,0 +1,23 @@
+[{
+    "id": "cors_rules",
+    "rules": [
+        {
+            "action": {
+                "type": "modifyHeaders",
+                "responseHeaders": [
+                    {
+                        "header": "Access-Control-Allow-Origin",
+                        "value": "*"
+                    },
+                    {
+                        "header": "Origin",
+                        "value": ""
+                    }
+                ]
+            },
+            "condition": {
+                "urlFilter": "https://zircon-twisty-can.glitch.me/*"
+            }
+        }
+    ]
+}]
